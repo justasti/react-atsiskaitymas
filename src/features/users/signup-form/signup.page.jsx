@@ -28,7 +28,7 @@ const SignupPage = () => {
     e.preventDefault()
     const hasErrors =
       formInputs.password !== formInputs.confirm ||
-      users.map((u) => u.email).includes(formInputs.email)
+      users?.map((u) => u.email).includes(formInputs.email)
     setErrorMessages([])
     if (hasErrors) {
       if (formInputs.password !== formInputs.confirm) {
@@ -45,7 +45,9 @@ const SignupPage = () => {
       }
     } else {
       dispatch(addUser({ ...formInputs, id: nanoid() }))
-      navigate('/')
+      setTimeout(() => {
+        navigate('/')
+      }, 100)
     }
   }
 
@@ -59,6 +61,7 @@ const SignupPage = () => {
             id='email'
             value={formInputs.email}
             onChange={inputChangeHandler}
+            required
           />
         </div>
         <div>
@@ -68,6 +71,7 @@ const SignupPage = () => {
             id='password'
             value={formInputs.password}
             onChange={inputChangeHandler}
+            required
           />
         </div>
         <div>
@@ -77,12 +81,17 @@ const SignupPage = () => {
             id='confirm'
             value={formInputs.confirm}
             onChange={inputChangeHandler}
+            required
           />
         </div>
         <input type='submit' value='Create Account' />
       </form>
       {errorMessages.length
-        ? errorMessages.map((m) => <p key={m}>{m}</p>)
+        ? errorMessages.map((m) => (
+            <p className='error-msg' key={m}>
+              {m}
+            </p>
+          ))
         : null}
     </main>
   )
