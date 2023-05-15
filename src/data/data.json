@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "id": "YaNnQk9y",
+      "title": "Sparkling Earrings",
+      "description": "Shimmering earrings that add a touch of elegance to any outfit."
+    },
+    {
+      "id": "JbaC0b1m",
+      "title": "Ocean Breeze",
+      "description": "Refresh and rejuvenate with the invigorating scent of the ocean breeze."
+    },
+    {
+      "id": "Ks0Lg9zR",
+      "title": "Silent Whisper",
+      "description": "A captivating novel that will keep you guessing until the very end."
+    },
+    {
+      "id": "V9qJm8x0",
+      "title": "Golden Sunset",
+      "description": "Witness the breathtaking beauty of a golden sunset over the horizon."
+    },
+    {
+      "id": "Z0yJhXcM",
+      "title": "Mystic Forest",
+      "description": "Explore the enchanting depths of the mystical forest and discover its secrets."
+    },
+    {
+      "id": "P2uWt5kG",
+      "title": "Whispering Waves",
+      "description": "Relax and unwind to the soothing sound of whispering waves on the shore."
+    },
+    {
+      "id": "T3zUo8pF",
+      "title": "Serenity Spa",
+      "description": "Indulge in a serene spa experience that will leave you feeling rejuvenated."
+    },
+    {
+      "id": "R7fHn6qK",
+      "title": "Gourmet Delight",
+      "description": "Savor the exquisite flavors of this gourmet delight, a true culinary masterpiece."
+    },
+    {
+      "id": "D4mIj1lA",
+      "title": "Starstruck Romance",
+      "description": "Get swept away in a starstruck romance that will melt your heart."
+    },
+    {
+      "id": "N6bSj5pV",
+      "title": "Vintage Charm",
+      "description": "Experience the allure of vintage charm with this timeless piece."
+    },
+    {
+      "id": "B8tQz9nX",
+      "title": "Dreamy Escape",
+      "description": "Embark on a dreamy escape to a paradise where worries fade away."
+    },
+    {
+      "id": "X1lFn2jP",
+      "title": "Whimsical Wonderland",
+      "description": "Step into a whimsical wonderland filled with enchantment and joy."
+    },
+    {
+      "id": "U0vKe4lN",
+      "title": "Blissful Harmony",
+      "description": "Find inner peace and blissful harmony with this soothing meditation guide."
+    },
+    {
+      "id": "M3rKf7xZ",
+      "title": "Gentle Breeze",
+      "description": "Feel the gentle breeze on your skin as you embrace nature's serenity."
+    },
+    {
+      "id": "H9wSd8qT",
+      "title": "Artistic Expression",
+      "description": "Unleash your creativity and explore the boundless world of artistic expression."
+    },
+    {
+      "id": "C6gVr1jW",
+      "title": "Wholesome Nourishment",
+      "description": "Nourish your body and delight your taste buds with wholesome and nutritious meals."
+    },
+    {
+      "id": "E5xHg2dL",
+      "title": "Moonlit Serenade",
+      "description": "Experience the magic of a moonlit serenade under a starry night sky."
+    }
+  ],
+  "users": [
+    {
+      "id": "R1ksPwI_TKJfkH87U7Bne",
+      "email": "justas.tirevicius@gmail.com",
+      "password": "123123"
+    },
+    {
+      "id": "3AdRYRUaxzoDyPrsq4xdC",
+      "email": "nejustas@gmail.com",
+      "password": "qweqwe"
+    }
+  ]
+}
