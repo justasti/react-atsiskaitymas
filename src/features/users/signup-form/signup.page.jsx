@@ -45,7 +45,7 @@ const SignupPage = () => {
       }
     } else {
       dispatch(addUser({ ...formInputs, id: nanoid() }))
-      Navigate('/')
+      navigate('/')
     }
   }
 
