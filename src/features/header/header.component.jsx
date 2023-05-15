@@ -7,10 +7,12 @@ const Header = () => {
   const { authUser } = useSelector((state) => state.users)
   return (
     <header>
-      <img
-        src='https://cdn.logo.com/hotlink-ok/logo-social-sq.png'
-        alt='logo img'
-      />
+      <Link to='/'>
+        <img
+          src='https://cdn.logo.com/hotlink-ok/logo-social-sq.png'
+          alt='logo img'
+        />
+      </Link>
       {authUser && (
         <ul>
           <li>
