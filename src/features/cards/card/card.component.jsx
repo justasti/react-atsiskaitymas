@@ -1,6 +1,6 @@
 const Card = ({ card }) => {
   return (
-    <div>
+    <div className='card'>
       <h2>{card.title}</h2>
       <p>{card.description}</p>
     </div>
