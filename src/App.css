@@ -3,15 +3,56 @@
 }
 header {
   height: 100px;
+  padding-inline: 30px;
   border-bottom: 1px solid #666;
   position: sticky;
   top: 0;
   background-color: #242424;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 100px;
+  padding-block: 10px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.buttons_container {
+  display: flex;
+  gap: 20px;
+}
+.buttons_container button {
+  background-color: transparent;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.buttons_container button:hover {
+  border-color: #fff;
+}
+header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+header a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 main {
   width: 100%;
   display: grid;
   place-content: center;
+  padding-block: 50px;
 }
 .cards_list {
   width: 100vw;
