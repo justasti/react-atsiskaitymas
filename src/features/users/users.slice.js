@@ -16,13 +16,7 @@ const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
 })
 
 const addUser = createAsyncThunk('users/addUser', async (user) => {
-  const modifiedUser = {
-    ...user,
-    password: hashPassword(user.password),
-    role: 'user',
-    isRestricted: false
-  }
-  return axios.post(USERS_API_URL, modifiedUser)
+  return axios.post(USERS_API_URL, user)
     .then(res => res.data)
 })
 
