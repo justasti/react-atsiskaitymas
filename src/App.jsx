@@ -9,6 +9,7 @@ import { fetchCards } from './features/cards/cards.slice'
 import { fetchUsers } from './features/users/users.slice'
 import Header from './features/header/header.component'
 import AddCardForm from './features/cards/add-card-form/add-card.component'
+import Footer from './features/footer/footer.component'
 function App() {
   const dispatch = useDispatch()
   const { authUser } = useSelector((state) => state.users)
@@ -39,6 +40,7 @@ function App() {
           element={authUser ? <Navigate to='/' /> : <SignupPage />}
         />
       </Routes>
+      <Footer />
     </>
   )
 }

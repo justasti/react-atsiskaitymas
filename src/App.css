@@ -97,3 +97,10 @@ input[type='submit'] {
 .error-msg {
   color: red;
 }
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: #444 solid 1px;
+}
