@@ -46,7 +46,7 @@ const usersSlice = createSlice({
       state.error = action.error.message
     })
     builder.addCase(addUser.fulfilled, (state, action) => {
-      state.users = state.users.push(action.payload)
+      state.users = [...state.users, action.payload]
       state.authUser = action.payload
     })
   }

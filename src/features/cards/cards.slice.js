@@ -37,7 +37,7 @@ const cardsSlice = createSlice({
       state.error = action.error.message
     })
     builder.addCase(addCard.fulfilled, (state, action) => {
-      state.cards = state.cards.push(action.payload)
+      state.cards = [...state.cards, action.payload]
     })
   }
 })

@@ -30,8 +30,14 @@ function App() {
           path='add'
           element={authUser ? <AddCardForm /> : <Navigate to='/login' />}
         />
-        <Route path='login' element={<LoginPage />} />
-        <Route path='signup' element={<SignupPage />} />
+        <Route
+          path='login'
+          element={authUser ? <Navigate to='/' /> : <LoginPage />}
+        />
+        <Route
+          path='signup'
+          element={authUser ? <Navigate to='/' /> : <SignupPage />}
+        />
       </Routes>
     </>
   )
