@@ -34,7 +34,10 @@ const Header = () => {
             </Link>
           </>
         ) : (
-          <button onClick={() => dispatch(logoutUser())}>Sign Out</button>
+          <>
+            <p>{authUser?.email}</p>
+            <button onClick={() => dispatch(logoutUser())}>Sign Out</button>
+          </>
         )}
       </div>
     </header>

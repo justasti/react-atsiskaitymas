@@ -23,7 +23,11 @@ header ul {
 }
 .buttons_container {
   display: flex;
+  align-items: center;
   gap: 20px;
+}
+.buttons_container p {
+  color: #888;
 }
 .buttons_container button {
   background-color: transparent;
