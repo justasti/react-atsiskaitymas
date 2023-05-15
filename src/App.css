@@ -53,6 +53,7 @@ main {
   display: grid;
   place-content: center;
   padding-block: 50px;
+  min-height: calc(100vh - 200px);
 }
 .cards_list {
   width: 100vw;
@@ -67,4 +68,29 @@ main {
 }
 .card h2 {
   margin-bottom: 10px;
+}
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+form input:not([type='submit']) {
+  padding: 5px;
+}
+input[type='submit'] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
 }
