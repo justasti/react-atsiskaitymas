@@ -3,9 +3,19 @@ import './App.css'
 import Homepage from './features/homepage/home.page'
 import LoginPage from './features/users/login-form/login.page'
 import SignupPage from './features/users/signup-form/signup.page'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+import { fetchCards } from './features/cards/cards.slice'
+import { fetchUsers } from './features/users/users.slice'
 function App() {
+  const dispatch = useDispatch()
   const { authUser } = useSelector((state) => state.users)
+
+  useEffect(() => {
+    dispatch(fetchUsers())
+    dispatch(fetchCards())
+  }, [])
+
   return (
     <Routes>
       <Route

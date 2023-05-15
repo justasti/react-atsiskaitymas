@@ -6,7 +6,7 @@ const USERS_API_URL = 'http://localhost:3000/users'
 const initialState = {
   loading: false,
   users: [],
-  authUser: null,
+  authUser: 'as',
   error: ''
 }
 

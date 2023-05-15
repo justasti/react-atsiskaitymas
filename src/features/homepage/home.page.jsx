@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
+import CardsList from './../cards/cards-list/cards-list.component'
 
 const Homepage = () => {
-  const { cards, loading } = useSelector((state) => state.cards)
-  return <div>{JSON.stringify(cards)}</div>
+  return <CardsList />
 }
 export default Homepage
