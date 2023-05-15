@@ -57,7 +57,7 @@ const SignupPage = () => {
         <div>
           <label htmlFor='email'>Email Address</label>
           <input
-            type='text'
+            type='email'
             id='email'
             value={formInputs.email}
             onChange={inputChangeHandler}

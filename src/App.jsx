@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { fetchCards } from './features/cards/cards.slice'
 import { fetchUsers } from './features/users/users.slice'
 import Header from './features/header/header.component'
+import AddCardForm from './features/cards/add-card-form/add-card.component'
 function App() {
   const dispatch = useDispatch()
   const { authUser } = useSelector((state) => state.users)
@@ -23,11 +24,11 @@ function App() {
       <Routes>
         <Route
           index
-          element={authUser ? <Homepage /> : <Navigate to='login' />}
+          element={authUser ? <Homepage /> : <Navigate to='/login' />}
         />
         <Route
           path='add'
-          element={authUser ? <Homepage /> : <Navigate to='login' />}
+          element={authUser ? <AddCardForm /> : <Navigate to='/login' />}
         />
         <Route path='login' element={<LoginPage />} />
         <Route path='signup' element={<SignupPage />} />
