@@ -41,13 +41,12 @@ const AddCardForm = () => {
         </div>
         <div>
           <label htmlFor='description'>Description</label>
-          <input
-            type='text'
+          <textarea
             id='description'
             value={formInputs.description}
             onChange={inputChangeHandler}
             required
-          />
+          ></textarea>
         </div>
         <input type='submit' value='Add Card' />
       </form>
